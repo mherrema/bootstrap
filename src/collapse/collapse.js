@@ -104,6 +104,7 @@ angular.module('ui.bootstrap.collapse', [])
               if ($animateCss) {
                 $animateCss(element, {
                   removeClass: 'in',
+                  easing: 'ease',
                   to: cssTo
                 }).start()['finally'](collapseDone);
               } else {
